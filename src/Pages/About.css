@@ -1,0 +1,90 @@
+.About{
+    color: white;
+}
+
+.People{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.Devin{
+    background-color: lightskyblue;
+    color: black;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.Dillon{
+    background-color: lightskyblue;
+    color: black;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.Shreya{
+    background-color: lightskyblue;
+    color: black;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.Forrest{
+    background-color: lightskyblue;
+    color: black;
+    width: 320px;
+    height: 400px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.Button2{
+    color: white;
+    background-color: lightskyblue;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    width:12%;
+    height: 30px;
+    border-radius: 40px;
+    transition: all ease 500ms;
+    position: absolute;
+    top: 670px;
+    left:44%;
+    /* right: 0;
+    left: 300px;
+    bottom: 200px; */
+    font-size: 10px;
+    /* float: left; */
+}
+
+.Button2:hover{
+    transform: scale(1.25);
+    background-color: rgb(50, 175, 252);
+    text-decoration: underline;
+}
+
+.DevinImg{
+    height: 300px;
+}
+
+.ShreyaImg{
+    height: 300px;
+}
+
+.DillonImg{
+    height: 300px;
+}
+
+.ForrestImg{
+    height: 300px;
+}
