@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import HealthImage from '../images/healthimage.jpg'
+import HealthImage from '../images/healthimage.jpeg'
 import Symptobot from '../images/symptobot.png'
 
 class Header extends Component{

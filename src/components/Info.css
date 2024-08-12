@@ -108,6 +108,7 @@
 }
 
 .Information-Submit{
+    top: 10px;
     background-color: rgb(58, 78, 255);
     color: white;
     font-size: 30px;
@@ -115,4 +116,5 @@
     height: 40px;
     border-radius: 10px;
     font-weight: bold;
+    margin-top: 10px;
 }

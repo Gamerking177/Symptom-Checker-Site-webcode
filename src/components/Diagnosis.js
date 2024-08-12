@@ -157,8 +157,6 @@ class Diagnosis extends Component {
                 {this.state.conditions.map((m) => (
                     <h1 key={uuid()}>{m.name}</h1>      
                  ))}
-            {/* <Link className='toHome' to='/SymptomChecker'>Go Back</Link>
-            <Link className='toHome' to='/'>Go to Home</Link> */}
             </div>
         );
     }

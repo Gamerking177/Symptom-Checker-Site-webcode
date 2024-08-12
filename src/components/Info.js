@@ -12,8 +12,8 @@ class Chatbox extends Component {
     constructor(props){
         super(props)
         this.state = {
-            Gender: 'male',
-            Age: 18,
+            Gender: '',
+            Age: '',
             symptomStatus: ["absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent","absent"],
             color: [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false],
             submitted: false
@@ -39,7 +39,6 @@ class Chatbox extends Component {
     }
 
     changeStatus(symptom){
-        // document.getElementById(symptom).style.backgroundColor = "gray";
         console.log(symptom)
         let index = this.props.symptoms.indexOf(symptom);
         let items = [...this.state.symptomStatus];
@@ -58,7 +57,6 @@ class Chatbox extends Component {
 
     getColor(symptom){
         console.log('hi')
-        // document.getElementById(symptom).style.backgroundColor = "gray";
         console.log(symptom)
         let index = this.props.symptoms.indexOf(symptom);
          let items = [...this.state.symptomStatus];
@@ -70,48 +68,10 @@ class Chatbox extends Component {
             ret= 'rgb(137, 183, 252)';
             console.log(ret)
         return ret;
-        // items[index] = item;
-        // this.setState({symptomStatus: items});
     }
 
     handleSubmit(){
         this.setState({submitted: true});
-        // var options = {
-        //     url: 'https://api.infermedica.com/v2/diagnosis',
-        //     method: 'POST',
-        //     headers: {
-        //         'App-Id': 'aa2fb846',
-        //         'App-Key': '150bc1e17a9a86a6c21f7e0f4cfa9d41',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     data: JSON.stringify({
-        //         sex: "male",
-        //         age: {
-        //           "value": 30
-        //         },
-        //         evidence: [
-        //             {
-        //               "id": "s_1193",
-        //               "choice_id": "present",
-        //               "source": "initial"
-        //             },
-        //             {
-        //               "id": "s_488",
-        //               "choice_id": "present"
-        //             },
-        //             {
-        //               "id": "s_418",
-        //               "choice_id": "present"
-        //             }
-        //         ]
-        //     })
-        //   };
-
-        //   await axios.request(options).then(function (response) {
-        //       console.log(response.data);
-        //   }).catch(function (error) {
-        //       console.error(error);
-        //   });
     }
 
     render() {
@@ -135,10 +95,6 @@ class Chatbox extends Component {
                     </div>
                 </div>
                 <div className='Information-Symptoms'>
-                    {/* <form className="Information-Form">
-                        <input className="Information-Typebox" type="text" value={this.state.Typed}  />
-                        <input className="Information-Add" type="submit" value="Add" onClick={this.handleSubmit}/>
-                    </form> */}
                     <h1 className='Information-Title'>Please Select Your Symptoms:</h1>
                     <div className='Information-SymptomList'>
                             {this.props.symptoms.map((m) => (

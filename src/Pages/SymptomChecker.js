@@ -8,9 +8,7 @@ class SymptomChecker extends Component {
   render() {
     return (
       <div className="SymptomChecker">
-          {/* <div> */}
-            <h1 className="SymptomChecker-Title">Symptom Checker</h1> 
-          {/* </div> */}
+          <h1 className="SymptomChecker-Title">Symptom Checker</h1> 
           <Chatbox />
           <div className = "BackHome">
                 <h1><Link className='App-link' to='/'>Go Home</Link></h1>

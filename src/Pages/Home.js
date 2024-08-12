@@ -14,7 +14,6 @@ class Home extends Component {
           <div className = "LeftPage">
             <Header/>
           </div>
-          {/* <img alt="" src={HealthImage} className="HealthImage" /> */}
       </div>
     );
   }
